@@ -21,8 +21,27 @@ spring:
           uri: lb://user-service
           predicates:
             - Path=/user/**
+  #        filters:
+  #          - name: CircuitBreaker
+  #           args:
+  #              name: user-service
+  #              fallbackuri: forward:/userServiceFallback
+
+
+
         - id: data-service
           uri: lb://data-service
           predicates:
             - Path=/data/**
+   #       filters:
+   #         - name: CircuitBreaker
+   #           args:
+   #             name: data-service
+   #             fallbackuri: forward:/dataServiceFallBack
 
+
+
+        - id: kafka-service
+          uri: lb://kafka-service
+          predicates:
+            - Path=/api/v1/kafka/**
