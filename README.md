@@ -1,4 +1,4 @@
 # microservice_architecture
 
 
-![alt text](https://raw.githubusercontent.com/ankushwairagade/microservice_erection/master/readme/Backend%20Architecture%20.png)
+![alt text](![image](https://user-images.githubusercontent.com/8322388/180412660-90a5a527-4237-4c8b-a6cb-6309f7817139.png))
