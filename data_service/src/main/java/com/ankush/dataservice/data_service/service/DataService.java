@@ -6,7 +6,7 @@ import java.util.List;
 
 public interface DataService {
 
-    public List<Data> getDataofUser(Long userId);
+   // public List<Data> getDataofUser(Long userId);
 
     void addData(Data data);
 

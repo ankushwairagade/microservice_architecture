@@ -37,4 +37,43 @@ public class Data {
     @CreationTimestamp
     private LocalDateTime date;
 
+    public Long getdId() {
+        return dId;
+    }
+
+    public void setdId(Long dId) {
+        this.dId = dId;
+    }
+
+    public Double getFieldX() {
+        return fieldX;
+    }
+
+    public void setFieldX(Double fieldX) {
+        this.fieldX = fieldX;
+    }
+
+    public Double getFieldY() {
+        return fieldY;
+    }
+
+    public void setFieldY(Double fieldY) {
+        this.fieldY = fieldY;
+    }
+
+    public Long getUserId() {
+        return userId;
+    }
+
+    public void setUserId(Long userId) {
+        this.userId = userId;
+    }
+
+    public LocalDateTime getDate() {
+        return date;
+    }
+
+    public void setDate(LocalDateTime date) {
+        this.date = date;
+    }
 }

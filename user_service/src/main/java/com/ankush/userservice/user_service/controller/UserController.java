@@ -27,7 +27,8 @@ public class UserController {
 
         // http://localhost:9002/data/user/13
         //DATA-SERVICE
-        List datalist =this.restTemplate.getForObject("http://data-service/data/user/"+userId, List.class);
+        // rigth now exception is not set    if service get down Error internal 5XX
+        List datalist = this.restTemplate.getForObject("http://data-service/data/user/"+userId, List.class);
 
         user.setDataList(datalist);
 
@@ -46,5 +47,12 @@ public class UserController {
     {
         this.userService.deleteUser(userId);
         return "user Deleted Successfully ...";
+    }
+
+    @PutMapping("/{userId}")
+    public String updateUser(@RequestBody User user)
+    {
+        this.userService.updateUSer(user);
+        return "updated successfully";
     }
 }

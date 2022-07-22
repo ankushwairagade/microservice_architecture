@@ -27,10 +27,12 @@ public class DataServiceImple implements DataService {
        //     new Data(6L,98.9,91.2,14L)
     );
 
+/*
     @Override
     public List<Data> getDataofUser(Long userId) {
         return list.stream().filter(data -> data.getUserId().equals(userId)).collect(Collectors.toList());
     }
+*/
 
     @Override
     public void addData(Data data) {

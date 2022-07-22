@@ -41,7 +41,14 @@ spring:
 
 
 
-        - id: kafka-service
-          uri: lb://kafka-service
+        - id: mailsender-service
+          uri: lb://mailsender-service
           predicates:
             - Path=/api/v1/kafka/**
+
+
+        - id: employee-service
+          uri: lb://employee-service
+          predicates:
+            - Path=/redis/**
+

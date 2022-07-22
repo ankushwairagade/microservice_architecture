@@ -56,5 +56,10 @@ public class UserServiceImple implements UserService{
         this.userRepository.deleteById(userId);
     }
 
+    @Override
+    public void updateUSer(User user) {
+        this.userRepository.save(user);
+    }
+
 
 }
